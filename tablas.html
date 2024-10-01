@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+</head>
+<body>
+    <h1>Tablas</h1>
+    <p>Una tabla permite la distribución de la información organizada por filas (rows) y columnas(cols). 
+        Se utiliza la etiqueta html de nombre <i>table</i>
+        Ejemplo: 
+    </p>
+    <table border="1">
+        <tr><!--Indica que voy a diseñar una tabla -->
+            <td bgcolor="red">Elemento 1</td> <!--Cada fila tiene un td -->
+            <td> Elemento 2</td>
+        </tr>
+        <tr>
+            <td bgcolor="c1f65d">
+                <font color="white">
+                    Elemento 3
+
+                </font>
+                </td> 
+            <td> Elemento 4 </td>
+        </tr> <!--Cada fila tiene un td-->
+    </table>
+
+        <h2> Problemas...</h2>
+        <p>Vamos a experimentar problemas cuando el número de columnas no sea el mismo en todas las filas. Lo siguiente está mal... Ejemplo: </p>
+    
+    <table border="1">
+        <tr><!--Indica que voy a diseñar una tabla -->
+            <td colespan="2"> Elemento 1 </td> <!--Cada fila tiene un td -->
+        </tr>
+        <tr>
+            <td>Elemento 3</td> 
+            <td> Elemento 4 </td>
+        </tr> <!--Cada fila tiene un td-->
+    </table>
+    <p>Otro ejemplo ahora con una celda que ocupa dos filas. EJemplo: </p>
+
+    <table border="1">
+        <tr><!--Indica que voy a diseñar una tabla -->
+            <td rowspan="2">Elemento 1</td> <!--Cada fila tiene un td -->
+            <td> Elemento 2</td>
+        </tr>
+        <tr>
+            <td> Elemento 4 </td>
+        </tr> <!--Cada fila tiene un td-->
+    </table>
+</body>
+</html>
